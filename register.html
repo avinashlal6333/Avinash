@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<script>
+function validate(){
+	var uname=document.getElementById("username").value;
+	var pass=document.getElementById("password").value;
+	if(uname==""){
+		alert("Enter username");
+		return false;
+	}
+	if(pass==""){
+		alert("Enter password");
+		return false;
+	}
+		return true;
+}
+</script>
+    <title>
+        Register</title>
+</head>
+
+<body bgcolor="lightGreen">
+    <center>
+<form action="login.html"  method="post" onsubmit="return validate()" >
+	username : <input type="text" placeholder="Enter username" id="username" />
+<br/>
+password: <input type="password" placeholder="Enter password" id="password" />
+<br/>
+<input type="submit" value="submit form" />
+</form>
+</center>
+              
+</body>
+
+</html>
